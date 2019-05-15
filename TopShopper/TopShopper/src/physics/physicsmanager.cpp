@@ -49,12 +49,12 @@
 #include "vehicle/PxVehicleUtil.h"
 #include "vehicle/snippetvehiclecommon/SnippetVehicleSceneQuery.h"
 #include "vehicle/snippetvehiclecommon/SnippetVehicleCreate.h"
-#include "vehicle/VehicleShoppingCart.h"
+#include "vehicle/vehicleshoppingcart.h"
 
 #include "utility/utility.h"
 
 #include "core/broker.h"
-#include "rendering/Geometry.h"
+#include "rendering/geometry.h"
 
 
 

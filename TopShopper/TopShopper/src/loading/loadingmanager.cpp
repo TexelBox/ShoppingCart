@@ -3,7 +3,7 @@
 
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
-#include "rendering/Geometry.h"
+#include "rendering/geometry.h"
 
 #include <stddef.h>
 #include <string.h>
@@ -92,7 +92,7 @@ void LoadingManager::init() {
 	// CHASSIS GEOMETRY:
 
 	// TODO: change this to chassis.obj later
-	loadObject("../TopShopper/resources/Objects/ShoppingCart.obj", returnVertices, returnUV, returnNormal, vIndex, uvIndex, normalIndex);
+	loadObject("resources/objects/ShoppingCart.obj", returnVertices, returnUV, returnNormal, vIndex, uvIndex, normalIndex);
 	
 	VehicleChassisGeo->verts = returnVertices;
 	VehicleChassisGeo->uvs = returnUV;
@@ -127,7 +127,7 @@ void LoadingManager::init() {
 
 	// WHEEL GEOMETRY:
 
-	loadObject("../TopShopper/resources/Objects/Wheel.obj", returnVertices, returnUV, returnNormal, vIndex, uvIndex, normalIndex);
+	loadObject("resources/objects/Wheel.obj", returnVertices, returnUV, returnNormal, vIndex, uvIndex, normalIndex);
 
 
 	VehicleWheelGeo->verts = returnVertices;
@@ -167,7 +167,7 @@ void LoadingManager::init() {
 
 	// TODO: change this to ground.obj later
 	// NOTE: an .obj file requires normals! (even if we dont use them)
-	loadObject("../TopShopper/resources/Objects/StoreFloor.obj", returnVertices, returnUV, returnNormal, vIndex, uvIndex, normalIndex);
+	loadObject("resources/objects/StoreFloor.obj", returnVertices, returnUV, returnNormal, vIndex, uvIndex, normalIndex);
 	
 
 	
@@ -202,7 +202,7 @@ void LoadingManager::init() {
 	//////////////////
 
 	// ROOF GEOMETRY:
-	loadObject("../TopShopper/resources/Objects/StoreRoof.obj", returnVertices, returnUV, returnNormal, vIndex, uvIndex, normalIndex);
+	loadObject("resources/objects/StoreRoof.obj", returnVertices, returnUV, returnNormal, vIndex, uvIndex, normalIndex);
 
 
 	RoofGeo->verts = returnVertices;
@@ -238,7 +238,7 @@ void LoadingManager::init() {
 	// PICKUP GEOMETRY (TEMP):
 
 	// spare change...
-	loadObject("../TopShopper/resources/Objects/Change.obj", returnVertices, returnUV, returnNormal, vIndex, uvIndex, normalIndex);
+	loadObject("resources/objects/Change.obj", returnVertices, returnUV, returnNormal, vIndex, uvIndex, normalIndex);
 	
 	
 	SpareChangeGeo->verts = returnVertices;
@@ -271,7 +271,7 @@ void LoadingManager::init() {
 	normalIndex.clear();
 
 	//Banana
-	loadObject("../TopShopper/resources/Objects/Banana.obj", returnVertices, returnUV, returnNormal, vIndex, uvIndex, normalIndex);
+	loadObject("resources/objects/Banana.obj", returnVertices, returnUV, returnNormal, vIndex, uvIndex, normalIndex);
 
 
 	BananaGeo->verts = returnVertices;
@@ -305,7 +305,7 @@ void LoadingManager::init() {
 	
 
 	//milk
-	loadObject("../TopShopper/resources/Objects/Milk.obj", returnVertices, returnUV, returnNormal, vIndex, uvIndex, normalIndex);
+	loadObject("resources/objects/Milk.obj", returnVertices, returnUV, returnNormal, vIndex, uvIndex, normalIndex);
 
 
 	MilkGeo->verts = returnVertices;
@@ -338,7 +338,7 @@ void LoadingManager::init() {
 
 
 	//water
-	loadObject("../TopShopper/resources/Objects/Water.obj", returnVertices, returnUV, returnNormal, vIndex, uvIndex, normalIndex);
+	loadObject("resources/objects/Water.obj", returnVertices, returnUV, returnNormal, vIndex, uvIndex, normalIndex);
 
 
 	WaterGeo->verts = returnVertices;
@@ -371,7 +371,7 @@ void LoadingManager::init() {
 
 
 	//cola
-	loadObject("../TopShopper/resources/Objects/Cola.obj", returnVertices, returnUV, returnNormal, vIndex, uvIndex, normalIndex);
+	loadObject("resources/objects/Cola.obj", returnVertices, returnUV, returnNormal, vIndex, uvIndex, normalIndex);
 
 
 	ColaGeo->verts = returnVertices;
@@ -403,7 +403,7 @@ void LoadingManager::init() {
 	normalIndex.clear();
 
 	//Apple
-	loadObject("../TopShopper/resources/Objects/Apple.obj", returnVertices, returnUV, returnNormal, vIndex, uvIndex, normalIndex);
+	loadObject("resources/objects/Apple.obj", returnVertices, returnUV, returnNormal, vIndex, uvIndex, normalIndex);
 
 
 	AppleGeo->verts = returnVertices;
@@ -435,7 +435,7 @@ void LoadingManager::init() {
 	normalIndex.clear();
 
 	//Watermelon
-	loadObject("../TopShopper/resources/Objects/Watermelon.obj", returnVertices, returnUV, returnNormal, vIndex, uvIndex, normalIndex);
+	loadObject("resources/objects/Watermelon.obj", returnVertices, returnUV, returnNormal, vIndex, uvIndex, normalIndex);
 
 
 	WatermelonGeo->verts = returnVertices;
@@ -468,7 +468,7 @@ void LoadingManager::init() {
 
 
 	//Carrot
-	loadObject("../TopShopper/resources/Objects/Carrot.obj", returnVertices, returnUV, returnNormal, vIndex, uvIndex, normalIndex);
+	loadObject("resources/objects/Carrot.obj", returnVertices, returnUV, returnNormal, vIndex, uvIndex, normalIndex);
 
 
 	CarrotGeo->verts = returnVertices;
@@ -500,7 +500,7 @@ void LoadingManager::init() {
 	normalIndex.clear();
 
 	//Eggplant
-	loadObject("../TopShopper/resources/Objects/Eggplant.obj", returnVertices, returnUV, returnNormal, vIndex, uvIndex, normalIndex);
+	loadObject("resources/objects/Eggplant.obj", returnVertices, returnUV, returnNormal, vIndex, uvIndex, normalIndex);
 
 
 	EggplantGeo->verts = returnVertices;
@@ -533,7 +533,7 @@ void LoadingManager::init() {
 
 
 	//Broccoli
-	loadObject("../TopShopper/resources/Objects/Broccoli.obj", returnVertices, returnUV, returnNormal, vIndex, uvIndex, normalIndex);
+	loadObject("resources/objects/Broccoli.obj", returnVertices, returnUV, returnNormal, vIndex, uvIndex, normalIndex);
 
 
 	BroccoliGeo->verts = returnVertices;
@@ -566,7 +566,7 @@ void LoadingManager::init() {
 
 
 	//MysteryBag
-	loadObject("../TopShopper/resources/Objects/Bag.obj", returnVertices, returnUV, returnNormal, vIndex, uvIndex, normalIndex);
+	loadObject("resources/objects/Bag.obj", returnVertices, returnUV, returnNormal, vIndex, uvIndex, normalIndex);
 
 
 	MysteryBagGeo->verts = returnVertices;
@@ -599,7 +599,7 @@ void LoadingManager::init() {
 
 
 	//Cookie
-	loadObject("../TopShopper/resources/Objects/Cookie.obj", returnVertices, returnUV, returnNormal, vIndex, uvIndex, normalIndex);
+	loadObject("resources/objects/Cookie.obj", returnVertices, returnUV, returnNormal, vIndex, uvIndex, normalIndex);
 
 
 	CookieGeo->verts = returnVertices;
@@ -632,7 +632,7 @@ void LoadingManager::init() {
 
 
 	//HOTPOTATO
-	loadObject("../TopShopper/resources/Objects/Potato.obj", returnVertices, returnUV, returnNormal, vIndex, uvIndex, normalIndex);
+	loadObject("resources/objects/Potato.obj", returnVertices, returnUV, returnNormal, vIndex, uvIndex, normalIndex);
 
 
 	HotPotatoGeo->verts = returnVertices;
@@ -665,7 +665,7 @@ void LoadingManager::init() {
 
 
 	//obstacle1
-	loadObject("../TopShopper/resources/Objects/BlueWallBot.obj", returnVertices, returnUV, returnNormal, vIndex, uvIndex, normalIndex);
+	loadObject("resources/objects/BlueWallBot.obj", returnVertices, returnUV, returnNormal, vIndex, uvIndex, normalIndex);
 
 
 	Obstacle1Geo->verts = returnVertices;
@@ -698,7 +698,7 @@ void LoadingManager::init() {
 
 
 	//obstacle2
-	loadObject("../TopShopper/resources/Objects/BlueWallMid.obj", returnVertices, returnUV, returnNormal, vIndex, uvIndex, normalIndex);
+	loadObject("resources/objects/BlueWallMid.obj", returnVertices, returnUV, returnNormal, vIndex, uvIndex, normalIndex);
 
 
 	Obstacle2Geo->verts = returnVertices;
@@ -731,7 +731,7 @@ void LoadingManager::init() {
 
 
 	//obstacle3
-	loadObject("../TopShopper/resources/Objects/BlueWallTop.obj", returnVertices, returnUV, returnNormal, vIndex, uvIndex, normalIndex);
+	loadObject("resources/objects/BlueWallTop.obj", returnVertices, returnUV, returnNormal, vIndex, uvIndex, normalIndex);
 
 
 	Obstacle3Geo->verts = returnVertices;
@@ -764,7 +764,7 @@ void LoadingManager::init() {
 
 
 	//obstacle4
-	loadObject("../TopShopper/resources/Objects/GreenWallBot.obj", returnVertices, returnUV, returnNormal, vIndex, uvIndex, normalIndex);
+	loadObject("resources/objects/GreenWallBot.obj", returnVertices, returnUV, returnNormal, vIndex, uvIndex, normalIndex);
 
 
 	Obstacle4Geo->verts = returnVertices;
@@ -797,7 +797,7 @@ void LoadingManager::init() {
 
 
 	//obstacle5
-	loadObject("../TopShopper/resources/Objects/GreenWallTop.obj", returnVertices, returnUV, returnNormal, vIndex, uvIndex, normalIndex);
+	loadObject("resources/objects/GreenWallTop.obj", returnVertices, returnUV, returnNormal, vIndex, uvIndex, normalIndex);
 
 
 	Obstacle5Geo->verts = returnVertices;
@@ -830,7 +830,7 @@ void LoadingManager::init() {
 
 
 	//obstacle6
-	loadObject("../TopShopper/resources/Objects/RedWallBot.obj", returnVertices, returnUV, returnNormal, vIndex, uvIndex, normalIndex);
+	loadObject("resources/objects/RedWallBot.obj", returnVertices, returnUV, returnNormal, vIndex, uvIndex, normalIndex);
 
 
 	Obstacle6Geo->verts = returnVertices;
@@ -863,7 +863,7 @@ void LoadingManager::init() {
 
 
 	//obstacle7
-	loadObject("../TopShopper/resources/Objects/RedWallTop.obj", returnVertices, returnUV, returnNormal, vIndex, uvIndex, normalIndex);
+	loadObject("resources/objects/RedWallTop.obj", returnVertices, returnUV, returnNormal, vIndex, uvIndex, normalIndex);
 
 
 	Obstacle7Geo->verts = returnVertices;
@@ -896,7 +896,7 @@ void LoadingManager::init() {
 	
 
 	//Pointer
-	loadObject("../TopShopper/resources/Objects/Pointer.obj", returnVertices, returnUV, returnNormal, vIndex, uvIndex, normalIndex);
+	loadObject("resources/objects/Pointer.obj", returnVertices, returnUV, returnNormal, vIndex, uvIndex, normalIndex);
 
 
 	PointerGeo->verts = returnVertices;
@@ -928,7 +928,7 @@ void LoadingManager::init() {
 	normalIndex.clear();
 
 	//CartBlack
-	loadObject("../TopShopper/resources/Objects/CartBlack.obj", returnVertices, returnUV, returnNormal, vIndex, uvIndex, normalIndex);
+	loadObject("resources/objects/CartBlack.obj", returnVertices, returnUV, returnNormal, vIndex, uvIndex, normalIndex);
 
 	for (unsigned int i = 0; i < vIndex.size(); i++) {
 		CartBlackGeoNoIndex->verts.push_back(returnVertices[vIndex[i]]);
@@ -951,7 +951,7 @@ void LoadingManager::init() {
 	normalIndex.clear();
 
 	//CartBlue
-	loadObject("../TopShopper/resources/Objects/CartBlue.obj", returnVertices, returnUV, returnNormal, vIndex, uvIndex, normalIndex);
+	loadObject("resources/objects/CartBlue.obj", returnVertices, returnUV, returnNormal, vIndex, uvIndex, normalIndex);
 
 	for (unsigned int i = 0; i < vIndex.size(); i++) {
 		CartBlueGeoNoIndex->verts.push_back(returnVertices[vIndex[i]]);
@@ -974,7 +974,7 @@ void LoadingManager::init() {
 	normalIndex.clear();
 
 	//CartGreen
-	loadObject("../TopShopper/resources/Objects/CartGreen.obj", returnVertices, returnUV, returnNormal, vIndex, uvIndex, normalIndex);
+	loadObject("resources/objects/CartGreen.obj", returnVertices, returnUV, returnNormal, vIndex, uvIndex, normalIndex);
 
 	for (unsigned int i = 0; i < vIndex.size(); i++) {
 		CartGreenGeoNoIndex->verts.push_back(returnVertices[vIndex[i]]);
@@ -997,7 +997,7 @@ void LoadingManager::init() {
 	normalIndex.clear();
 
 	//CartOrange
-	loadObject("../TopShopper/resources/Objects/CartOrange.obj", returnVertices, returnUV, returnNormal, vIndex, uvIndex, normalIndex);
+	loadObject("resources/objects/CartOrange.obj", returnVertices, returnUV, returnNormal, vIndex, uvIndex, normalIndex);
 
 	for (unsigned int i = 0; i < vIndex.size(); i++) {
 		CartOrangeGeoNoIndex->verts.push_back(returnVertices[vIndex[i]]);
@@ -1020,7 +1020,7 @@ void LoadingManager::init() {
 	normalIndex.clear();
 
 	//CartPurple
-	loadObject("../TopShopper/resources/Objects/CartPurple.obj", returnVertices, returnUV, returnNormal, vIndex, uvIndex, normalIndex);
+	loadObject("resources/objects/CartPurple.obj", returnVertices, returnUV, returnNormal, vIndex, uvIndex, normalIndex);
 
 	for (unsigned int i = 0; i < vIndex.size(); i++) {
 		CartPurpleGeoNoIndex->verts.push_back(returnVertices[vIndex[i]]);
@@ -1042,7 +1042,7 @@ void LoadingManager::init() {
 	normalIndex.clear();
 
 
-	loadObject("../TopShopper/resources/Objects/Spotlight.obj", returnVertices, returnUV, returnNormal, vIndex, uvIndex, normalIndex);
+	loadObject("resources/objects/Spotlight.obj", returnVertices, returnUV, returnNormal, vIndex, uvIndex, normalIndex);
 
 	for (unsigned int i = 0; i < vIndex.size(); i++) {
 		SpotlightGeoNoIndex->verts.push_back(returnVertices[vIndex[i]]);
@@ -1065,7 +1065,7 @@ void LoadingManager::init() {
 	normalIndex.clear();
 
 
-	loadObject("../TopShopper/resources/Objects/Shield.obj", returnVertices, returnUV, returnNormal, vIndex, uvIndex, normalIndex);
+	loadObject("resources/objects/Shield.obj", returnVertices, returnUV, returnNormal, vIndex, uvIndex, normalIndex);
 
 	for (unsigned int i = 0; i < vIndex.size(); i++) {
 		ShieldGeoNoIndex->verts.push_back(returnVertices[vIndex[i]]);

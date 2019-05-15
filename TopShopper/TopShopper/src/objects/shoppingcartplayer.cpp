@@ -1,5 +1,5 @@
 #include "shoppingcartplayer.h"
-#include "vehicle/VehicleShoppingCart.h"
+#include "vehicle/vehicleshoppingcart.h"
 
 
 ShoppingCartPlayer::ShoppingCartPlayer(VehicleShoppingCart *shoppingCartBase)

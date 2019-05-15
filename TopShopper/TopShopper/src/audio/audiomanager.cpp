@@ -74,16 +74,16 @@ AudioManager::SoundEffect* AudioManager::getSoundEffect(SoundEffectTypes sound) 
 void AudioManager::changeBGM(BGMTypes BGM) {
 	switch (BGM) {
 	case BGMTypes::END_SCENE:
-		bgm.music = loadMusic("../TopShopper/resources/sfx/elevatorMusic.mp3");
+		bgm.music = loadMusic("resources/sfx/elevatorMusic.mp3");
 		break;
 	case BGMTypes::GAME_SCENE:
-		bgm.music = loadMusic("../TopShopper/resources/sfx/CoconutMall.mp3");
+		bgm.music = loadMusic("resources/sfx/CoconutMall.mp3");
 		break;
 	case BGMTypes::MENU_SCENE:
-		bgm.music = loadMusic("../TopShopper/resources/sfx/JunesTheme.mp3");
+		bgm.music = loadMusic("resources/sfx/JunesTheme.mp3");
 		break;
 	default:
-		bgm.music = loadMusic("../TopShopper/resources/sfx/JunesTheme.mp3");
+		bgm.music = loadMusic("resources/sfx/JunesTheme.mp3");
 		break;
 	}
 	//cout << "load bgm file" << endl;
@@ -216,65 +216,65 @@ void AudioManager::init() {
 	//	soundEffects.push_back(sfx);
 	//}
 
-	rollingSound_player1->filename = "../TopShopper/resources/sfx/rollCart.wav";
+	rollingSound_player1->filename = "resources/sfx/rollCart.wav";
 	rollingSound_player1->sfx = loadSFX(rollingSound_player1->filename);
 	rollingSound_player1->channel = 0;
 	rollingSound_player1->loop = 4;
 
-	rollingSound_ai1->filename = "../TopShopper/resources/sfx/rollCart.wav";
+	rollingSound_ai1->filename = "resources/sfx/rollCart.wav";
 	rollingSound_ai1->sfx = loadSFX(rollingSound_ai1->filename);
 	rollingSound_ai1->channel = 1;
 
-	rollingSound_ai2->filename = "../TopShopper/resources/sfx/rollCart.wav";
+	rollingSound_ai2->filename = "resources/sfx/rollCart.wav";
 	rollingSound_ai2->sfx = loadSFX(rollingSound_ai2->filename);
 	rollingSound_ai2->channel = 2;
 
-	rollingSound_ai3->filename = "../TopShopper/resources/sfx/rollCart.wav";
+	rollingSound_ai3->filename = "resources/sfx/rollCart.wav";
 	rollingSound_ai3->sfx = loadSFX(rollingSound_ai3->filename);
 	rollingSound_ai3->channel = 3;
 
-	rollingSound_ai4->filename = "../TopShopper/resources/sfx/rollCart.wav";
+	rollingSound_ai4->filename = "resources/sfx/rollCart.wav";
 	rollingSound_ai4->sfx = loadSFX(rollingSound_ai4->filename);
 	rollingSound_ai4->channel = 4;
 
-	rollingSound_ai5->filename = "../TopShopper/resources/sfx/rollCart.wav";
+	rollingSound_ai5->filename = "resources/sfx/rollCart.wav";
 	rollingSound_ai5->sfx = loadSFX(rollingSound_ai5->filename);
 	rollingSound_ai5->channel = 5;
 
-	paperbagSound->filename = "../TopShopper/resources/sfx/paperBag.wav";
+	paperbagSound->filename = "resources/sfx/paperBag.wav";
 	paperbagSound->sfx = loadSFX(paperbagSound->filename);
 	paperbagSound->channel = 6;
 
-	hitWallSound->filename = "../TopShopper/resources/sfx/cartHitWall.wav";
+	hitWallSound->filename = "resources/sfx/cartHitWall.wav";
 	hitWallSound->sfx = loadSFX(hitWallSound->filename);
 	hitWallSound->channel = 12;
 
-	selectSound->filename = "../TopShopper/resources/sfx/ffselected.wav";
+	selectSound->filename = "resources/sfx/ffselected.wav";
 	selectSound->sfx = loadSFX(selectSound->filename);
 	selectSound->channel = 8;
 
-	pickItemSound->filename = "../TopShopper/resources/sfx/pickItem.wav";
+	pickItemSound->filename = "resources/sfx/pickItem.wav";
 	pickItemSound->sfx = loadSFX(pickItemSound->filename);
 	pickItemSound->channel = 13;
 
-	dropItemSound->filename = "../TopShopper/resources/sfx/itemDrop.wav";
+	dropItemSound->filename = "resources/sfx/itemDrop.wav";
 	dropItemSound->sfx = loadSFX(dropItemSound->filename);
 	dropItemSound->distance = 0;
 	dropItemSound->channel = 9;
 	//changeVolumeSFX(dropItemSound, 150);
 
 
-	turboSound->filename = "../TopShopper/resources/sfx/turbo.wav";
+	turboSound->filename = "resources/sfx/turbo.wav";
 	turboSound->sfx = loadSFX(turboSound->filename);
 	//turboSound->distance = 200;
 	turboSound->channel = 7;
 	changeVolumeSFX(turboSound, 20);
 
-	explosionSound->filename = "../TopShopper/resources/sfx/explosion.wav";
+	explosionSound->filename = "resources/sfx/explosion.wav";
 	explosionSound->sfx = loadSFX(explosionSound->filename);
 	explosionSound->channel = 10;
 
-	tickingSound->filename = "../TopShopper/resources/sfx/ticking.wav";
+	tickingSound->filename = "resources/sfx/ticking.wav";
 	tickingSound->sfx = loadSFX(tickingSound->filename);
 	tickingSound->channel = 11;
 	tickingSound->loop = 2;

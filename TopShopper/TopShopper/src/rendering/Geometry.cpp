@@ -5,7 +5,7 @@
  *      Author: John Hall
  */
 
-#include "Geometry.h"
+#include "geometry.h"
 
 Geometry::Geometry() : vao(0), vertexBuffer(0), normalBuffer(0), uvBuffer(0), colorBuffer(0), gradientShader(false), cullBackFace(false), isTransparent(false), hasShadow(true), pointer(false), player(-1), EntityType(NONE), transDegree(1.0f){
 	//vectors are initially empty

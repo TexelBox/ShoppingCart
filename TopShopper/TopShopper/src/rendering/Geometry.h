@@ -18,7 +18,7 @@
 #include <GLFW/glfw3.h>
 #include <string>
 #include "texture.h"
-#include "../objects/entity.h"
+#include "objects/entity.h"
 
 class Geometry {
 public:

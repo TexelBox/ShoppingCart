@@ -5,7 +5,7 @@
 *      Author: John Hall
 */
 
-#include "ShaderTools.h"
+#include "shadertools.h"
 
 #include <iostream>
 #include <fstream>
@@ -88,8 +88,8 @@ GLuint ShaderTools::LinkProgram(GLuint vertexShader, GLuint fragmentShader) {
 
 GLuint ShaderTools::InitializeShaders(std::string vertexShader, std::string fragmentShader) {
 	// load shader source from files
-	std::string vertexSource = LoadSource("../TopShopper/resources/shaders/" + vertexShader + ".glsl");
-	std::string fragmentSource = LoadSource("../TopShopper/resources/shaders/" + fragmentShader + ".glsl");
+	std::string vertexSource = LoadSource("resources/shaders/" + vertexShader + ".glsl");
+	std::string fragmentSource = LoadSource("resources/shaders/" + fragmentShader + ".glsl");
 	if (vertexSource.empty() || fragmentSource.empty()) return false;
 
 	// compile shader source into shader objects

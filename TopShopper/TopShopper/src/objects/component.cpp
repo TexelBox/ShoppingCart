@@ -1,7 +1,7 @@
 #include "component.h"
 #include "entity.h"
 #include "shoppingcartplayer.h"
-#include "vehicle/VehicleShoppingCart.h"
+#include "vehicle/vehicleshoppingcart.h"
 #include "core/broker.h"
 #include <iostream>
 #include <cstdlib>

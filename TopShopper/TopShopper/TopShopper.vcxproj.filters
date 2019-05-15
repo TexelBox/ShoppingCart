@@ -48,19 +48,10 @@
     <ClCompile Include="src\objects\shoppingcartplayer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\vehicle\VehicleShoppingCart.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\rendering\texture.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\rendering\Geometry.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\rendering\glad.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\rendering\ShaderTools.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\core\gamescene.cpp">
@@ -79,9 +70,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\audio\audiomanager.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\input\inputmanager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\objects\milk.cpp">
@@ -141,6 +129,18 @@
     <ClCompile Include="src\objects\obstacle7.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\vehicle\vehicleshoppingcart.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rendering\shadertools.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rendering\geometry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\input\inputmanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\ai\aimanager.h">
@@ -179,16 +179,7 @@
     <ClInclude Include="src\objects\shoppingcartplayer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\vehicle\VehicleShoppingCart.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="src\rendering\texture.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\rendering\Geometry.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\rendering\ShaderTools.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\core\gamescene.h">
@@ -264,6 +255,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\objects\obstacle7.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\vehicle\vehicleshoppingcart.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\rendering\shadertools.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\rendering\geometry.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

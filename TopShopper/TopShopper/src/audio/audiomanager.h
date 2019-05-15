@@ -51,7 +51,7 @@ public:
 	};
 
 	struct Music {
-		std::string filename = "../TopShopper/resources/sfx/elevatorMusic.mp3";
+		std::string filename = "resources/sfx/elevatorMusic.mp3";
 		Mix_Music* music = NULL;
 		int volume = MIX_MAX_VOLUME / 10;  // only work for mod, mp3 and ogg files
 		int loop = -1; // number of times to play, -1 forever, bigger than 0(number of times)
@@ -90,7 +90,7 @@ private:
 	std::map<std::string, Mix_Chunk*> mSFX;
 
 	Music bgm;
-	std::vector<std::string> filenames = { "../TopShopper/resources/sfx/test2.wav" };
+	std::vector<std::string> filenames = { "resources/sfx/test2.wav" };
 	std::vector<SoundEffect> soundEffects;
 
 

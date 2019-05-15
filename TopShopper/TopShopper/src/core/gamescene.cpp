@@ -4,7 +4,7 @@
 #include "objects/sparechange.h"
 #include <iostream>
 #include "PxRigidActor.h"
-#include "vehicle/VehicleShoppingCart.h"
+#include "vehicle/vehicleshoppingcart.h"
 
 using namespace physx;
 

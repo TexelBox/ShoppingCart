@@ -14,7 +14,7 @@
 #include "objects/sparechange.h"
 #include <cstdlib>
 #include "objects/shoppingcartplayer.h"
-#include "vehicle/VehicleShoppingCart.h"
+#include "vehicle/vehicleshoppingcart.h"
 
 using namespace physx;
 

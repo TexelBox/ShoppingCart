@@ -4,11 +4,11 @@
 #include <iostream>
 #include <string>
 #include <map>
-#include "ShaderTools.h"
+#include "shadertools.h"
 #include "PxRigidDynamic.h"
 #include <ft2build.h>
 #include FT_FREETYPE_H
-#include "vehicle/VehicleShoppingCart.h"
+#include "vehicle/vehicleshoppingcart.h"
 #include <deque>
 #include <sstream>
 #include <ios>
@@ -1427,133 +1427,130 @@ void RenderingManager::initFrameBuffers() {
 
 
 void RenderingManager::initSpriteTextures() {
-
-	InitializeTexture(_borderSpriteBlue, "../TopShopper/resources/Sprites/BlueBorder.png", GL_TEXTURE_2D);
-	InitializeTexture(_borderSpriteBlack, "../TopShopper/resources/Sprites/BlackBorder.png", GL_TEXTURE_2D);
-	InitializeTexture(_borderSpritePurple, "../TopShopper/resources/Sprites/PurpleBorder.png", GL_TEXTURE_2D);
-	InitializeTexture(_borderSpriteRed, "../TopShopper/resources/Sprites/RedBorder.png", GL_TEXTURE_2D);
-	InitializeTexture(_borderSpriteOrange, "../TopShopper/resources/Sprites/OrangeBorder.png", GL_TEXTURE_2D);
-	InitializeTexture(_borderSpriteGreen, "../TopShopper/resources/Sprites/GreenBorder.png", GL_TEXTURE_2D);
-	InitializeTexture(_appleSprite, "../TopShopper/resources/Sprites/Apple.png", GL_TEXTURE_2D);
-	InitializeTexture(_bananaSprite, "../TopShopper/resources/Sprites/Banana.png", GL_TEXTURE_2D);
-	InitializeTexture(_broccoliSprite, "../TopShopper/resources/Sprites/Broccoli.png", GL_TEXTURE_2D);
-	InitializeTexture(_carrotSprite, "../TopShopper/resources/Sprites/Carrot.png", GL_TEXTURE_2D);
-	InitializeTexture(_colaSprite, "../TopShopper/resources/Sprites/Cola.png", GL_TEXTURE_2D);
-	InitializeTexture(_cookieSprite, "../TopShopper/resources/Sprites/Cookie.png", GL_TEXTURE_2D);
-	InitializeTexture(_eggplantSprite, "../TopShopper/resources/Sprites/Eggplant.png", GL_TEXTURE_2D);
-	InitializeTexture(_hotPotatoSprite, "../TopShopper/resources/Sprites/Hotpotato.png", GL_TEXTURE_2D);
-	InitializeTexture(_milkSprite, "../TopShopper/resources/Sprites/Milk.png", GL_TEXTURE_2D);
-	InitializeTexture(_waterSprite, "../TopShopper/resources/Sprites/Water.png", GL_TEXTURE_2D);
-	InitializeTexture(_watermelonSprite, "../TopShopper/resources/Sprites/Watermelon.png", GL_TEXTURE_2D);
-	InitializeTexture(_clockSprite, "../TopShopper/resources/Sprites/clock.png", GL_TEXTURE_2D);
-	InitializeTexture(_checkMarkSprite, "../TopShopper/resources/Sprites/Check_Mark.png", GL_TEXTURE_2D);
-	InitializeTexture(_boostSprite, "../TopShopper/resources/Sprites/Boost.png", GL_TEXTURE_2D);
-	InitializeTexture(_buttonSprite, "../TopShopper/resources/Sprites/Button.png", GL_TEXTURE_2D);
-	InitializeTexture(_buttonHighlightSprite, "../TopShopper/resources/Sprites/ButtonHighlight.png", GL_TEXTURE_2D);
-	InitializeTexture(_timeBoxSprite, "../TopShopper/resources/Sprites/TimeBox.png", GL_TEXTURE_2D);
-	InitializeTexture(_titleScreenSprite, "../TopShopper/resources/Sprites/TitleScreen.png", GL_TEXTURE_2D);
-	InitializeTexture(_resultsScreenSprite, "../TopShopper/resources/Sprites/ResultsScreen.png", GL_TEXTURE_2D);
-	InitializeTexture(_backgroundSprite, "../TopShopper/resources/Sprites/Background.png", GL_TEXTURE_2D);
-	InitializeTexture(_rulesSprite, "../TopShopper/resources/Sprites/Rules.png", GL_TEXTURE_2D);
-	InitializeTexture(_creditsSprite, "../TopShopper/resources/Sprites/Credits.png", GL_TEXTURE_2D);
-	InitializeTexture(_controlsSprite, "../TopShopper/resources/Sprites/Controls.png", GL_TEXTURE_2D);
+	InitializeTexture(_borderSpriteBlue, "resources/sprites/BlueBorder.png", GL_TEXTURE_2D);
+	InitializeTexture(_borderSpriteBlack, "resources/sprites/BlackBorder.png", GL_TEXTURE_2D);
+	InitializeTexture(_borderSpritePurple, "resources/sprites/PurpleBorder.png", GL_TEXTURE_2D);
+	InitializeTexture(_borderSpriteRed, "resources/sprites/RedBorder.png", GL_TEXTURE_2D);
+	InitializeTexture(_borderSpriteOrange, "resources/sprites/OrangeBorder.png", GL_TEXTURE_2D);
+	InitializeTexture(_borderSpriteGreen, "resources/sprites/GreenBorder.png", GL_TEXTURE_2D);
+	InitializeTexture(_appleSprite, "resources/sprites/Apple.png", GL_TEXTURE_2D);
+	InitializeTexture(_bananaSprite, "resources/sprites/Banana.png", GL_TEXTURE_2D);
+	InitializeTexture(_broccoliSprite, "resources/sprites/Broccoli.png", GL_TEXTURE_2D);
+	InitializeTexture(_carrotSprite, "resources/sprites/Carrot.png", GL_TEXTURE_2D);
+	InitializeTexture(_colaSprite, "resources/sprites/Cola.png", GL_TEXTURE_2D);
+	InitializeTexture(_cookieSprite, "resources/sprites/Cookie.png", GL_TEXTURE_2D);
+	InitializeTexture(_eggplantSprite, "resources/sprites/Eggplant.png", GL_TEXTURE_2D);
+	InitializeTexture(_hotPotatoSprite, "resources/sprites/Hotpotato.png", GL_TEXTURE_2D);
+	InitializeTexture(_milkSprite, "resources/sprites/Milk.png", GL_TEXTURE_2D);
+	InitializeTexture(_waterSprite, "resources/sprites/Water.png", GL_TEXTURE_2D);
+	InitializeTexture(_watermelonSprite, "resources/sprites/Watermelon.png", GL_TEXTURE_2D);
+	InitializeTexture(_clockSprite, "resources/sprites/clock.png", GL_TEXTURE_2D);
+	InitializeTexture(_checkMarkSprite, "resources/sprites/Check_Mark.png", GL_TEXTURE_2D);
+	InitializeTexture(_boostSprite, "resources/sprites/Boost.png", GL_TEXTURE_2D);
+	InitializeTexture(_buttonSprite, "resources/sprites/Button.png", GL_TEXTURE_2D);
+	InitializeTexture(_buttonHighlightSprite, "resources/sprites/ButtonHighlight.png", GL_TEXTURE_2D);
+	InitializeTexture(_timeBoxSprite, "resources/sprites/TimeBox.png", GL_TEXTURE_2D);
+	InitializeTexture(_titleScreenSprite, "resources/sprites/TitleScreen.png", GL_TEXTURE_2D);
+	InitializeTexture(_resultsScreenSprite, "resources/sprites/ResultsScreen.png", GL_TEXTURE_2D);
+	InitializeTexture(_backgroundSprite, "resources/sprites/Background.png", GL_TEXTURE_2D);
+	InitializeTexture(_rulesSprite, "resources/sprites/Rules.png", GL_TEXTURE_2D);
+	InitializeTexture(_creditsSprite, "resources/sprites/Credits.png", GL_TEXTURE_2D);
+	InitializeTexture(_controlsSprite, "resources/sprites/Controls.png", GL_TEXTURE_2D);
 }
 
 void RenderingManager::init3DTextures() {
 	MyTexture texture;
-	InitializeTexture(&texture, "../TopShopper/resources/Textures/gold.jpg", GL_TEXTURE_2D);
+	InitializeTexture(&texture, "resources/textures/gold.jpg", GL_TEXTURE_2D);
 	_broker->getLoadingManager()->getGeometry(SPARE_CHANGE_GEO_NO_INDEX)->texture = texture;
 
-	InitializeTexture(&texture, "../TopShopper/resources/Textures/yellow.jpg", GL_TEXTURE_2D);
+	InitializeTexture(&texture, "resources/textures/yellow.jpg", GL_TEXTURE_2D);
 	_broker->getLoadingManager()->getGeometry(BANANA_GEO_NO_INDEX)->texture = texture;
 
-	InitializeTexture(&texture, "../TopShopper/resources/Textures/background2-marble.jpg", GL_TEXTURE_2D); // CAN THIS BE REMOVED??
+	InitializeTexture(&texture, "resources/textures/background2-marble.jpg", GL_TEXTURE_2D); // CAN THIS BE REMOVED??
 	_broker->getLoadingManager()->getGeometry(VEHICLE_CHASSIS_GEO_NO_INDEX)->texture = texture;
 
-	InitializeTexture(&texture, "../TopShopper/resources/Textures/TireTexture.png", GL_TEXTURE_2D);
+	InitializeTexture(&texture, "resources/textures/TireTexture.png", GL_TEXTURE_2D);
 	_broker->getLoadingManager()->getGeometry(VEHICLE_WHEEL_GEO_NO_INDEX)->texture = texture;
 
-	InitializeTexture(&texture, "../TopShopper/resources/Textures/StoreFloor.png", GL_TEXTURE_2D);
+	InitializeTexture(&texture, "resources/textures/StoreFloor.png", GL_TEXTURE_2D);
 	_broker->getLoadingManager()->getGeometry(GROUND_GEO_NO_INDEX)->texture = texture;
 
-	InitializeTexture(&texture, "../TopShopper/resources/Textures/background2-marble.jpg", GL_TEXTURE_2D);
+	InitializeTexture(&texture, "resources/textures/background2-marble.jpg", GL_TEXTURE_2D);
 	_broker->getLoadingManager()->getGeometry(ROOF_GEO_NO_INDEX)->texture = texture;
 
-	InitializeTexture(&texture, "../TopShopper/resources/Textures/BlueWallBotTexture.png", GL_TEXTURE_2D);
+	InitializeTexture(&texture, "resources/textures/BlueWallBotTexture.png", GL_TEXTURE_2D);
 	_broker->getLoadingManager()->getGeometry(OBSTACLE1_GEO_NO_INDEX)->texture = texture;
 
-	InitializeTexture(&texture, "../TopShopper/resources/Textures/BlueWallMidTexture.png", GL_TEXTURE_2D);
+	InitializeTexture(&texture, "resources/textures/BlueWallMidTexture.png", GL_TEXTURE_2D);
 	_broker->getLoadingManager()->getGeometry(OBSTACLE2_GEO_NO_INDEX)->texture = texture;
 
-	InitializeTexture(&texture, "../TopShopper/resources/Textures/BlueWallTopTexture.png", GL_TEXTURE_2D);
+	InitializeTexture(&texture, "resources/textures/BlueWallTopTexture.png", GL_TEXTURE_2D);
 	_broker->getLoadingManager()->getGeometry(OBSTACLE3_GEO_NO_INDEX)->texture = texture;
 
-	InitializeTexture(&texture, "../TopShopper/resources/Textures/GreenWallBotTexture.png", GL_TEXTURE_2D);
+	InitializeTexture(&texture, "resources/textures/GreenWallBotTexture.png", GL_TEXTURE_2D);
 	_broker->getLoadingManager()->getGeometry(OBSTACLE4_GEO_NO_INDEX)->texture = texture;
 
-	InitializeTexture(&texture, "../TopShopper/resources/Textures/GreenWallTopTexture.png", GL_TEXTURE_2D);
+	InitializeTexture(&texture, "resources/textures/GreenWallTopTexture.png", GL_TEXTURE_2D);
 	_broker->getLoadingManager()->getGeometry(OBSTACLE5_GEO_NO_INDEX)->texture = texture;
 
-	InitializeTexture(&texture, "../TopShopper/resources/Textures/RedWallTexture.png", GL_TEXTURE_2D);
+	InitializeTexture(&texture, "resources/textures/RedWallTexture.png", GL_TEXTURE_2D);
 	_broker->getLoadingManager()->getGeometry(OBSTACLE6_GEO_NO_INDEX)->texture = texture;
 
-	InitializeTexture(&texture, "../TopShopper/resources/Textures/RedWallTexture.png", GL_TEXTURE_2D);
+	InitializeTexture(&texture, "resources/textures/RedWallTexture.png", GL_TEXTURE_2D);
 	_broker->getLoadingManager()->getGeometry(OBSTACLE7_GEO_NO_INDEX)->texture = texture;
 
-	InitializeTexture(&texture, "../TopShopper/resources/Textures/MilkTexture.png", GL_TEXTURE_2D);
+	InitializeTexture(&texture, "resources/textures/MilkTexture.png", GL_TEXTURE_2D);
 	_broker->getLoadingManager()->getGeometry(MILK_GEO_NO_INDEX)->texture = texture;
 
-	InitializeTexture(&texture, "../TopShopper/resources/Textures/WaterTexture.png", GL_TEXTURE_2D);
+	InitializeTexture(&texture, "resources/textures/WaterTexture.png", GL_TEXTURE_2D);
 	_broker->getLoadingManager()->getGeometry(WATER_GEO_NO_INDEX)->texture = texture;
 
-	InitializeTexture(&texture, "../TopShopper/resources/Textures/ColaTexture.png", GL_TEXTURE_2D);
+	InitializeTexture(&texture, "resources/textures/ColaTexture.png", GL_TEXTURE_2D);
 	_broker->getLoadingManager()->getGeometry(COLA_GEO_NO_INDEX)->texture = texture;
 
-	InitializeTexture(&texture, "../TopShopper/resources/Textures/AppleTexture.png", GL_TEXTURE_2D);
+	InitializeTexture(&texture, "resources/textures/AppleTexture.png", GL_TEXTURE_2D);
 	_broker->getLoadingManager()->getGeometry(APPLE_GEO_NO_INDEX)->texture = texture;
 
-	InitializeTexture(&texture, "../TopShopper/resources/Textures/WatermelonTexture.png", GL_TEXTURE_2D);
+	InitializeTexture(&texture, "resources/textures/WatermelonTexture.png", GL_TEXTURE_2D);
 	_broker->getLoadingManager()->getGeometry(WATERMELON_GEO_NO_INDEX)->texture = texture;
 
-	InitializeTexture(&texture, "../TopShopper/resources/Textures/CarrotTexture.png", GL_TEXTURE_2D);
+	InitializeTexture(&texture, "resources/textures/CarrotTexture.png", GL_TEXTURE_2D);
 	_broker->getLoadingManager()->getGeometry(CARROT_GEO_NO_INDEX)->texture = texture;
 
-	InitializeTexture(&texture, "../TopShopper/resources/Textures/EggplantTexture.png", GL_TEXTURE_2D);
+	InitializeTexture(&texture, "resources/textures/EggplantTexture.png", GL_TEXTURE_2D);
 	_broker->getLoadingManager()->getGeometry(EGGPLANT_GEO_NO_INDEX)->texture = texture;
 
-	InitializeTexture(&texture, "../TopShopper/resources/Textures/BroccoliTexture.png", GL_TEXTURE_2D);
+	InitializeTexture(&texture, "resources/textures/BroccoliTexture.png", GL_TEXTURE_2D);
 	_broker->getLoadingManager()->getGeometry(BROCCOLI_GEO_NO_INDEX)->texture = texture;
 
-	InitializeTexture(&texture, "../TopShopper/resources/Textures/gold.jpg", GL_TEXTURE_2D);
+	InitializeTexture(&texture, "resources/textures/gold.jpg", GL_TEXTURE_2D);
 	_broker->getLoadingManager()->getGeometry(MYSTERY_BAG_GEO_NO_INDEX)->texture = texture;
 
-	InitializeTexture(&texture, "../TopShopper/resources/Textures/CookieTexture.png", GL_TEXTURE_2D);
+	InitializeTexture(&texture, "resources/textures/CookieTexture.png", GL_TEXTURE_2D);
 	_broker->getLoadingManager()->getGeometry(COOKIE_GEO_NO_INDEX)->texture = texture;
 
-	InitializeTexture(&texture, "../TopShopper/resources/Textures/PotatoTexture.png", GL_TEXTURE_2D);
+	InitializeTexture(&texture, "resources/textures/PotatoTexture.png", GL_TEXTURE_2D);
 	_broker->getLoadingManager()->getGeometry(HOT_POTATO_GEO_NO_INDEX)->texture = texture;
 
-	InitializeTexture(&texture, "../TopShopper/resources/Textures/yellow.jpg", GL_TEXTURE_2D);
+	InitializeTexture(&texture, "resources/textures/yellow.jpg", GL_TEXTURE_2D);
 	_broker->getLoadingManager()->getGeometry(SPOTLIGHT_GEO_NO_INDEX)->texture = texture;
 
-	InitializeTexture(&texture, "../TopShopper/resources/Textures/blue.jpg", GL_TEXTURE_2D);
+	InitializeTexture(&texture, "resources/textures/blue.jpg", GL_TEXTURE_2D);
 	_broker->getLoadingManager()->getGeometry(SHIELD_GEO_NO_INDEX)->texture = texture;
 
-	//InitializeTexture(&texture, "../TopShopper/resources/Textures/gold.jpg", GL_TEXTURE_2D);
-	//_broker->getLoadingManager()->getGeometry(POINTER_GEO_NO_INDEX)->texture = texture;
 
-	InitializeTexture(_shoppingCartRed, "../TopShopper/resources/Textures/CartRedTexture.jpg", GL_TEXTURE_2D); // 0
-	InitializeTexture(_shoppingCartBlue, "../TopShopper/resources/Textures/CartBlueTexture.jpg", GL_TEXTURE_2D); // 1
-	InitializeTexture(_shoppingCartGreen, "../TopShopper/resources/Textures/CartGreenTexture.jpg", GL_TEXTURE_2D); // 2
-	InitializeTexture(_shoppingCartPurple, "../TopShopper/resources/Textures/CartPurpleTexture.jpg", GL_TEXTURE_2D); // 3
-	InitializeTexture(_shoppingCartOrange, "../TopShopper/resources/Textures/CartOrangeTexture.jpg", GL_TEXTURE_2D); // 4
-	InitializeTexture(_shoppingCartBlack, "../TopShopper/resources/Textures/CartBlackTexture.jpg", GL_TEXTURE_2D); // 5
-	InitializeTexture(_redTexture, "../TopShopper/resources/Textures/red.jpg", GL_TEXTURE_2D); // 0
-	InitializeTexture(_blueTexture, "../TopShopper/resources/Textures/blue.jpg", GL_TEXTURE_2D); // 1
-	InitializeTexture(_greenTexture, "../TopShopper/resources/Textures/green.jpg", GL_TEXTURE_2D); // 2
-	InitializeTexture(_purpleTexture, "../TopShopper/resources/Textures/purple.jpg", GL_TEXTURE_2D); // 3
-	InitializeTexture(_orangeTexture, "../TopShopper/resources/Textures/orange.jpg", GL_TEXTURE_2D); // 4
-	InitializeTexture(_blackTexture, "../TopShopper/resources/Textures/black.jpg", GL_TEXTURE_2D); // 5
+	InitializeTexture(_shoppingCartRed, "resources/textures/CartRedTexture.jpg", GL_TEXTURE_2D); // 0
+	InitializeTexture(_shoppingCartBlue, "resources/textures/CartBlueTexture.jpg", GL_TEXTURE_2D); // 1
+	InitializeTexture(_shoppingCartGreen, "resources/textures/CartGreenTexture.jpg", GL_TEXTURE_2D); // 2
+	InitializeTexture(_shoppingCartPurple, "resources/textures/CartPurpleTexture.jpg", GL_TEXTURE_2D); // 3
+	InitializeTexture(_shoppingCartOrange, "resources/textures/CartOrangeTexture.jpg", GL_TEXTURE_2D); // 4
+	InitializeTexture(_shoppingCartBlack, "resources/textures/CartBlackTexture.jpg", GL_TEXTURE_2D); // 5
+	InitializeTexture(_redTexture, "resources/textures/red.jpg", GL_TEXTURE_2D); // 0
+	InitializeTexture(_blueTexture, "resources/textures/blue.jpg", GL_TEXTURE_2D); // 1
+	InitializeTexture(_greenTexture, "resources/textures/green.jpg", GL_TEXTURE_2D); // 2
+	InitializeTexture(_purpleTexture, "resources/textures/purple.jpg", GL_TEXTURE_2D); // 3
+	InitializeTexture(_orangeTexture, "resources/textures/orange.jpg", GL_TEXTURE_2D); // 4
+	InitializeTexture(_blackTexture, "resources/textures/black.jpg", GL_TEXTURE_2D); // 5
 }
 
 
@@ -1713,7 +1710,7 @@ void RenderingManager::initTextRender() {
 		std::cout << "ERROR::FREETYPE: Could not init FreeType Library" << std::endl;
 
 	FT_Face face;
-	if (FT_New_Face(ft, "../TopShopper/resources/Fonts/misc/seguibl.ttf", 0, &face))
+	if (FT_New_Face(ft, "resources/fonts/misc/seguibl.ttf", 0, &face))
 		std::cout << "ERROR::FREETYPE: Failed to load font" << std::endl;
 
 	FT_Set_Pixel_Sizes(face, 0, 48);
