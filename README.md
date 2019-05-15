@@ -53,6 +53,7 @@
 ---
 
 ## LATEST RELEASE INFO:
-- N/A
+- v1.0.0
+- built on Windows 10 (SDK 10.0.17763.0) using Visual Studio 2017
 
 ---
