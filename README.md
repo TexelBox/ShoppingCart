@@ -23,6 +23,8 @@
 ---
 
 ### KEYBOARD (if no controller plugged in):
+
+#### GAMEPLAY:
 - S (Reverse)
 - W (Accelerate)
 - A (Steer Left)
@@ -30,6 +32,11 @@
 - P (Pause/Un-Pause)
 - Shift (Handbrake)
 - Space (Boost)
+
+#### MENU:
+- W/A/S/D (Move Cursor)
+- Enter (Select Option)
+- Space (Back)
 
 ---
 
