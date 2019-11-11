@@ -1,5 +1,9 @@
 # Top Shopper
 
+## Preview:
+- here is a link to a video showcasing single player demo gameplay
+- https://www.youtube.com/watch?v=DB0aSm3rFv0
+
 ## Controls:
 
 ### XBOX Controller:
